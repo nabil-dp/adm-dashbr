@@ -18,7 +18,7 @@ export default async function InventoryPage() {
     return (
       <div className="space-y-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-white mb-2">Inventaris Store</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">Inventory Store</h1>
           <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
             Total: {products.length} Item
           </span>
