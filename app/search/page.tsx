@@ -47,7 +47,6 @@ export default function SearchPage() {
         <p className="text-gray-600">Gunakan fitur ini untuk mencari produk secara instan di sisi klien.</p>
       </header>
 
-      {/* Komponen SearchBar dengan state lokal  */}
       <SearchBar onSearch={handleSearch} />
 
       {error && (
@@ -57,7 +56,7 @@ export default function SearchPage() {
       )}
 
       {loading ? (
-        <LoadingSkeleton /> // Fitur Tambahan: Loading Indicator [cite: 38]
+        <LoadingSkeleton />
       ) : (
         <div className="grid grid-cols-1 gap-4">
           {filteredProducts.length > 0 ? (
@@ -89,12 +88,6 @@ export default function SearchPage() {
         </div>
       )}
 
-      {/* Penjelasan untuk Video Demonstrasi  */}
-      <div className="mt-12 p-4 bg-blue-50 border-l-4 border-blue-400 text-sm text-blue-700">
-        <strong>Detail Teknis:</strong> Halaman ini menggunakan 
-        <span className="font-mono bg-blue-100 px-1 mx-1 text-blue-900">Client-Side Rendering (CSR)</span> 
-        untuk memberikan pengalaman pencarian yang instan tanpa loading antar halaman. 
-      </div>
     </div>
   );
 }

@@ -11,7 +11,6 @@ export default async function CategoriesPage() {
         <p className="text-gray-400">Pilih kategori untuk melihat produk terkait (SSG Implementation).</p>
       </header>
       
-      {/* Grid Kontainer */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((cat) => (
           <Link 
@@ -21,7 +20,6 @@ export default async function CategoriesPage() {
                        transition-all duration-300 hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)]
                        flex flex-col items-center justify-center text-center overflow-hidden"
           >
-            {/* Dekorasi kartu - Efek cahaya saat hover */}
             <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
             {/* Ikon Kategori */}
@@ -39,7 +37,7 @@ export default async function CategoriesPage() {
               Klik untuk jelajahi koleksi
             </p>
 
-            {/* Panah Indikator (Muncul saat hover) */}
+            {/* Panah Indikator */}
             <div className="mt-4 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-blue-500 font-bold">
               Lihat Detail →
             </div>

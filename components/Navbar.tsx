@@ -5,17 +5,17 @@ export default function Navbar() {
     <nav className="bg-white shadow-md p-4 mb-6">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="font-bold text-xl text-blue-600">
-          FakeAdmin
+          Random Store
         </Link>
         <div className="flex gap-6 text-sm font-medium text-gray-700">
           <Link href="/categories" className="hover:text-blue-500 transition">
-            Categories (SSG)
+            Categories
           </Link>
           <Link href="/inventory" className="hover:text-blue-500 transition">
-            Inventory (SSR)
+            Inventory
           </Link>
           <Link href="/search" className="hover:text-blue-500 transition">
-            Search (CSR)
+            Search
           </Link>
         </div>
       </div>
