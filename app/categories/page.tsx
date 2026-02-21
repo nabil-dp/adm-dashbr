@@ -8,7 +8,7 @@ export default async function CategoriesPage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <header className="mb-10 text-center">
         <h1 className="text-3xl font-bold text-white mb-2">Kategori Produk</h1>
-        <p className="text-gray-400">Pilih kategori untuk melihat produk terkait (SSG Implementation).</p>
+        <p className="text-gray-400">Pilih kategori untuk melihat produk terkait.</p>
       </header>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

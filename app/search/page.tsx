@@ -1,4 +1,4 @@
-'use client'; // Wajib untuk CSR 
+'use client'; 
 
 import { useState, useEffect } from 'react';
 import { getAllProducts, Product } from '@/utils/api';
@@ -12,9 +12,8 @@ export default function SearchPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   
-  const { showNotification } = useNotification(); // Menggunakan Context API 
+  const { showNotification } = useNotification(); 
 
-  // Effect untuk mengambil data saat komponen dimuat (CSR) 
   useEffect(() => {
     const fetchInitialData = async () => {
       try {
@@ -32,7 +31,6 @@ export default function SearchPage() {
     fetchInitialData();
   }, [showNotification]);
 
-  // Fungsi filter di sisi klien (CSR)
   const handleSearch = (query: string) => {
     const filtered = products.filter((p) =>
       p.title.toLowerCase().includes(query.toLowerCase())
@@ -43,15 +41,15 @@ export default function SearchPage() {
   return (
     <div className="max-w-4xl mx-auto">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900">Pencarian Inventaris (CSR)</h1>
-        <p className="text-gray-600">Gunakan fitur ini untuk mencari produk secara instan di sisi klien.</p>
+        <h1 className="text-3xl font-bold text-white mb-2">Pencarian Inventaris</h1>
+        <p className="text-gray-400">Gunakan fitur ini untuk mencari produk</p>
       </header>
 
       <SearchBar onSearch={handleSearch} />
 
       {error && (
         <div className="p-4 bg-red-100 text-red-700 rounded-lg mb-6">
-          Terjadi kesalahan saat memuat data. [cite: 39]
+          Terjadi kesalahan saat memuat data. 
         </div>
       )}
 
