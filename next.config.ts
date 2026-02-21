@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').Config} */
+const nextConfig = {
+  output: 'export', 
+  images: {
+    unoptimized: true, 
+  },
+ 
+  basePath: '/adm-dashbr', 
 };
 
 export default nextConfig;
